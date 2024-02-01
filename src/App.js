@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="Ashboard">
+      
     </div>
+    <div>
+    1. Building Block of Ecommmerce 90 mins
+    2. Cart Component 2 hr 
+    3. Making Add to Cart Work 90 mins
+    4. Implement the About page in the most optimised way 2 hr
+
+    </div>
+    </>
   );
 }
 
