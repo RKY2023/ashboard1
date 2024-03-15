@@ -1,19 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Govt from './components/Govt/Govt';
+import Colors from './components/Colors/Colors';
+import Routine from './components/Routine/Routine';
+import AboutJS from './components/JS/AboutJS';
+import Projects from './components/Career/Projects/Projects';
 
-const App = () => {
+const App = (props) => {
   return (
     <>
-    <div className="Ashboard">
-      
-    </div>
-    <div>
-    1. Building Block of Ecommmerce 90 mins
-    2. Cart Component 2 hr 
-    3. Making Add to Cart Work 90 mins
-    4. Implement the About page in the most optimised way 2 hr
-
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' index exact element={<Home />} />
+          <Route path='/routine' element={<Routine />} />
+          <Route path='/govt' element={<Govt />} />
+          <Route path='/login' element={<Home />} />
+          <Route path='/colors' element={<Colors />} />
+          <Route path='/jsnotes' element={<AboutJS />} />
+          <Route path='/myprojects' element={<Projects />} />
+          
+        </Routes>
+      </BrowserRouter>
+    
     </>
   );
 }
